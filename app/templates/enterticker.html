@@ -1,0 +1,14 @@
+<!-- extend from base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Plot the historical price of a symbol</h1>
+     <form action="" method="post" name="login">
+        {{ form.hidden_tag() }}
+        <p>
+            Please enter a symbol:<br>
+            {{ form.ticker(size=80) }}<br>
+        </p>
+        <p><input type="submit" value="Plot"></p>
+     </form>
+{% endblock %}
